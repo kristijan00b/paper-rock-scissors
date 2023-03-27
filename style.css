@@ -1,0 +1,86 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+body{
+    background-color: olivedrab;
+}
+
+section {
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.player,
+.computer {
+    padding: 0px 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.playerHand {
+    transform: rotateY(180deg);
+}
+button{
+    border: 0px ;
+    border-radius: 5px;
+    background-color: black;
+    padding: 5px 0px;
+    cursor: pointer;
+    width: 100px;
+}
+button:hover{
+    background-color: olivedrab;
+    box-shadow: 0px 0px 5px black;
+}
+@media screen and (max-width: 800px){
+    .playerHand, .computerHand{
+        height: 100px;
+    }
+}
+
+@keyframes shakePlayer {
+    0% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    25% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    50% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    75% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    100% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+
+  }
+  
+  @keyframes shakeComputer {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-50px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+
+  }
+  
